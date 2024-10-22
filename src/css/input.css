@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Prociono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yellowtail&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@keyframes wave {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(14deg);
+  }
+}
+@layer utilities {
+  .wave {
+    display: inline-block;
+    animation: wave 1s linear infinite;
+  }
+}
